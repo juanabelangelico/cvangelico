@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CV Ang&eacute;lico</title>
+    <meta name="description" content="CV juan abel angelico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+
+</head>
+
+<body>
+<!-- Funcion para mostrar datos de contacto -->
+<script>
+	function MostrarDatos() {
+	  document.getElementById("contacto").innerHTML = "<strong>Celular:</strong> 3794090998 <br> <strong>Correo:</strong> angelico@correo.com";
+	}
+</script>
+<div align='center'>
+
+  <ul>
+  <h1>Juan Abel Angelico</h1>
+    <h2>Curriculum Vitae</h2>
+    <th><img src="imagenes/fotocv.jpg"></th>
+    <li><a class="active" href="datos.html" target="VerContenido">Datos</a></li>
+    <li><a href= "formacionacad.html" target="VerContenido">Formación
+        académica</a></li>
+    <li><a href="experiencialaboral.html" target="VerContenido">Experiencia laboral</a></li>
+    <button type="button" onclick="MostrarDatos();">Contacto</button>
+  <li id="contacto"></li>
+  </ul>
+  <div id="marconavegacion">
+    <iframe name="VerContenido" src="datos.html"></iframe>
+  </div>
+</body>
+</html>
